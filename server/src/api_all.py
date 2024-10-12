@@ -14,12 +14,12 @@ app = FastAPI()
 
 
 # CORS middleware setup
-# CORS middleware setup
-# CORS middleware setup
+#allow_origins=["https://your-frontend-url.onrender.com"],
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:5173",  # Local development (if needed)
+        "https://nasaspaceappschallenge2024-2.onrender.com/NASASpaceAppsChallenge2024/",
         "https://syang0624.github.io",  # GitHub Pages deployment (if needed)
         "http://101.101.218.177"  # External IP address, 
         "https://syang0624.github.io/NASASpaceAppsChallenge2024"
